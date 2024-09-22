@@ -26,11 +26,4 @@ This project demonstrates a simple client-server application where data is encry
 - Node.js (v16 or above)
 - npm or yarn package manager
 
-## Getting Started
-
-### 1. Clone the repository:
-
-```bash
-git clone https://github.com/your-repo/encrypted-data-handling.git
-cd encrypted-data-handling
 
