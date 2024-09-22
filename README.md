@@ -1,18 +1,36 @@
-# Tamper Proof Data
+# Encrypted Data Handling with JWT in React
 
-At Bequest, we require that important user data is tamper proof. Otherwise, our system can incorrectly distribute assets if our internal server or database is breached. 
+This project demonstrates a simple client-server application where data is encrypted using AES encryption via **CryptoJS** on the client-side, and verified using **JWT tokens** on the server-side. The client communicates with the backend to send and receive encrypted data, and the integrity of the data is verified using JWT.
 
-**1. How does the client ensure that their data has not been tampered with?**
-<br />
-**2. If the data has been tampered with, how can the client recover the lost data?**
+## Features
 
+- **AES Encryption**: The client encrypts the data before sending it to the server.
+- **JWT Token Verification**: The server generates a JWT token when data is updated, and the client can verify data integrity by checking the token.
+- **Data Recovery**: The client fetches the encrypted data from the server and verifies its integrity.
+- **React**: The front-end is built using React, with state management using `useState` and API calls using `fetch`.
 
-Edit this repo to answer these two questions using any technologies you'd like, there any many possible solutions. Feel free to add comments.
+## Technologies Used
 
-### To run the apps:
-```npm run start``` in both the frontend and backend
+- **Frontend**:
+  - React (with TypeScript)
+  - CryptoJS (for AES encryption)
+  - Fetch API (for communication with backend)
 
-## To make a submission:
-1. Clone the repo
-2. Make a PR with your changes in your repo
-3. Email your github repository to robert@bequest.finance
+- **Backend**:
+  - Express.js
+  - JSON Web Token (JWT)
+  - CryptoJS (for encryption on the server)
+  
+## Prerequisites
+
+- Node.js (v16 or above)
+- npm or yarn package manager
+
+## Getting Started
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/your-repo/encrypted-data-handling.git
+cd encrypted-data-handling
+
