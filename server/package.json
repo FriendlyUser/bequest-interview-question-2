@@ -12,7 +12,9 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "crypto-js": "^4.1.1",      // Added for encryption
+    "jsonwebtoken": "^9.0.0"    // Added for JWT token handling
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
